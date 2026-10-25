@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tatu Treats - fiber-rich roasted barley bites born in a new mom's postpartum kitchen, from grandpa's talkan recipe.">
+<style>body{margin:0;font-family:system-ui;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Tatu Treats</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap">
+<style>
+/* Layout: airy personal scroll — story-first, lowercase type, sparkle accents */
+:root{
+  --bg:#F6F2EB; --ink:#241B12; --muted:#8A7A66; --card:#FDFBF6;
+  --accent:#D96B2F; --soft:#F3E0CE; --line:#E7DCC9;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#211912; --ink:#F3EADC; --muted:#BFAE98; --card:#2B2218;
+    --accent:#E8803D; --soft:#3A2B1C; --line:#3E3225;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#211912; --ink:#F3EADC; --muted:#BFAE98; --card:#2B2218;
+  --accent:#E8803D; --soft:#3A2B1C; --line:#3E3225;
+  color-scheme: dark;
+}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Figtree',system-ui,sans-serif; font-size:17px; line-height:1.65;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:0 72px;
+}
+main{max-width:600px; margin:0 auto;}
+header{padding-block:56px 8px; text-align:center;}
+.wordmark{font-family:'Unbounded','Figtree',sans-serif; font-weight:500; font-size:15px; letter-spacing:.02em; margin:0 0 26px;}
+h1{font-family:'Unbounded','Figtree',sans-serif; font-weight:700; font-size:clamp(32px,8.5vw,48px); margin:0; line-height:1.08; text-wrap:balance;}
+.sub{font-size:19px; color:var(--muted); margin:18px auto 0; max-width:30em;}
+.sub strong{color:var(--ink);}
+.spark{width:22px; height:22px; display:block; margin:42px auto;}
+h2{font-family:'Unbounded','Figtree',sans-serif; font-weight:500; font-size:22px; margin:0 0 16px;}
+p{margin:0 0 14px;}
+.story{background:var(--soft); border-radius:22px; padding:28px 26px;}
+.story p{font-size:16.5px;}
+.story p:last-child{margin-bottom:0;}
+.story .sig{font-weight:700; color:var(--accent);}
+.talkan-list{margin:10px 0 0; padding-left:20px;}
+.talkan-list li{margin-bottom:8px; font-size:16px;}
+.ingredients{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:10px;}
+.ingr{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; min-width:0;}
+.ingr h3{margin:0 0 3px; font-size:15.5px; font-family:'Unbounded','Figtree',sans-serif; font-weight:500;}
+.ingr p{margin:0; font-size:14.5px; color:var(--muted);}
+.flavors{display:flex; flex-direction:column; gap:12px;}
+.flavor{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px;}
+.flavor h3{margin:0; font-size:19px; font-family:'Unbounded','Figtree',sans-serif; font-weight:500;}
+.coat{font-size:14px; color:var(--accent); font-weight:600; margin:3px 0 8px;}
+.ing{font-size:14.5px; margin:0; color:var(--muted);}
+.allergy{background:var(--soft); border-radius:16px; padding:20px 24px;}
+.allergy ul{margin:0; padding-left:18px;}
+.allergy li{margin-bottom:6px; font-size:15.5px;}
+.feedback{text-align:center;}
+.q{margin:22px 0 0; text-align:left;}
+.q h3{font-size:16px; font-family:'Unbounded','Figtree',sans-serif; font-weight:500; margin:0 0 10px;}
+.chips{display:flex; flex-wrap:wrap; gap:8px;}
+.chip{position:relative;}
+.chip input{position:absolute; opacity:0; width:1px; height:1px;}
+.chip span{display:inline-block; border:2px solid var(--line); border-radius:999px; padding:9px 17px; font-size:15px; cursor:pointer; background:var(--card); user-select:none;}
+.chip input:checked + span{border-color:var(--accent); background:var(--soft); font-weight:700;}
+.chip input:focus-visible + span{outline:2px solid var(--accent); outline-offset:2px;}
+.tin{width:100%; box-sizing:border-box; border:2px solid var(--line); border-radius:12px; padding:11px 14px; font:inherit; background:var(--card); color:var(--ink);}
+.fbpre{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:12px 14px; font-size:13px; white-space:pre-wrap; text-align:left; font-family:inherit; margin:0;}
+.btn{display:inline-block; background:var(--accent); color:#FFF6EC; padding:15px 30px; border-radius:999px; font-weight:700; text-decoration:none; font-size:17px; border:none;}
+.btn-ghost{background:transparent; color:var(--accent); border:2px solid var(--accent);}
+footer{text-align:center; font-size:13px; color:var(--muted); margin-top:48px;}
+footer p{margin-bottom:8px;}
+.gate{position:fixed; inset:0; background:var(--bg); z-index:50; display:flex; align-items:center; justify-content:center; text-align:center; overflow:auto; padding:max(20px, env(safe-area-inset-left, 0px));}
+.gate-in{max-width:460px; width:100%;}
+.gate-brand{font-family:'Unbounded','Figtree',sans-serif; font-weight:500; font-size:15px; margin:0 0 20px;}
+.gate-title{font-family:'Unbounded','Figtree',sans-serif; font-weight:700; font-size:clamp(32px,8vw,44px); margin:0 0 16px; line-height:1.08; text-wrap:balance;}
+.gate-sub{color:var(--muted); font-size:18px; margin:0 0 28px;}
+.gate-skip{font-family:inherit; cursor:pointer; font-size:17px;}
+.gate-ig{margin-top:28px; font-size:15px;}
+.gate-ig a{color:var(--accent); font-weight:700; text-decoration:none;}
+.gate .spark{margin:30px auto 0;}
+</style>
+
+<div class="gate" id="gate" role="dialog" aria-label="Feedback invitation">
+  <div class="gate-in">
+    <p class="gate-brand">tatu treats</p>
+    <h2 class="gate-title">the fiber-rich treat is here 🤎</h2>
+    <p class="gate-sub">hey — thanks for taking a sec! i'm a new mom to a beautiful son, adam, and these little bites from my grandpa's recipe became my go-to healthy snack when i needed one most. now i'm sharing them with you. if you share your honest thoughts back, you'll genuinely make this mama's day — and my story is right below if you're curious ✦</p>
+    <p style="margin:0 0 14px;"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeE8BJ3c_I-jCd8LArIzYb_7e2WOpSSf8I4Bfzi-9kbcBF0Qw/viewform">leave feedback 🤎</a></p>
+    <p style="margin:0;"><button class="btn btn-ghost gate-skip" onclick="document.getElementById('gate').hidden = true">read my story →</button></p>
+    <p class="gate-ig"><a href="https://www.instagram.com/tatu_treats/">follow along · @tatu_treats</a></p>
+    <svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+  </div>
+</div>
+
+<main>
+<header>
+  <p class="wordmark">tatu treats ✦</p>
+  <h1>a new mom. a grandpa's recipe. a snack that actually keeps you full.</h1>
+  <p class="sub"><strong>little roasted-barley bites</strong> packed with fiber, not sugar — born in my postpartum kitchen.</p>
+</header>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section class="story">
+  <h2>hi, i'm the mom behind tatu 🤎</h2>
+  <p>i started making these during postpartum, far away from my family. those newborn days are a blur — you forget to eat, then grab something sugary that spikes you up and drops you even harder.</p>
+  <p>what my body was actually begging for was <strong>fiber</strong>. and the most fiber-rich thing i know is talkan — my grandpa's roasted barley, one of the highest-fiber grains on earth. its superpower is <strong>beta-glucan</strong>, a soluble fiber that keeps you full for hours, slows the sugar spike so your energy stays steady instead of crashing, and keeps digestion gentle and happy (every postpartum mom knows exactly why that matters 🤎).</p>
+  <p>i made my first batch at 2am between adam's feeds. one little bite and i was full, calm, and quietly comforted. that's what makes tatu different — it tastes like a treat, but the fiber is doing real work underneath.</p>
+  <p>now i make them for my kids. and for you.</p>
+  <p class="sig">— the tatu mom ✦</p>
+</section>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section>
+  <h2>ok but what is talkan?</h2>
+  <p>talkan = whole barley, slow-roasted until it's toasty and nutty, then ground into flour. grandparents made it for generations because it works:</p>
+  <div class="benefits" style="margin-top:14px;">
+    <div class="benefit">
+      <h3>no sugar spike</h3>
+      <p>barley's superpower is <strong>beta-glucan</strong>, a soluble fiber that turns into a gel as you digest. that gel slows how fast carbs reach your blood — an effect so well studied that eu food authorities officially recognize beta-glucan for reducing the blood-sugar rise after a meal. steady energy, no crash.</p>
+    </div>
+    <div class="benefit">
+      <h3>full for longer</h3>
+      <p>that same gel slows your stomach's emptying, which is why barley keeps ranking among the most satisfying grains in satiety research. one small bite actually holds you.</p>
+    </div>
+    <div class="benefit">
+      <h3>heart-friendly</h3>
+      <p>the fda recognizes 3g of barley beta-glucan a day, as part of a balanced diet, for helping lower cholesterol — studies show ldl dropping around 5–8%.</p>
+    </div>
+    <div class="benefit">
+      <h3>happy gut</h3>
+      <p>beta-glucan is also a prebiotic: your gut bacteria ferment it into short-chain fatty acids that keep digestion gentle and regular. whole barley brings iron, magnesium and selenium along for the ride.</p>
+    </div>
+  </div>
+  <p style="font-size:14px; color:var(--muted); margin-top:12px;">(we're a tiny home-kitchen snack, not a supplement — but our key ingredient's resume is very real 🤎)</p>
+</section>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section>
+  <h2>what's inside (and why)</h2>
+  <div class="ingredients">
+    <div class="ingr"><h3>🌾 talkan</h3><p>the fiber hero. keeps you full, feeds your gut, tastes like toasted comfort.</p></div>
+    <div class="ingr"><h3>🤎 medjool dates</h3><p>all the sweetness, zero added sugar — plus potassium and even more fiber.</p></div>
+    <div class="ingr"><h3>🍑 black apricots</h3><p>sun-dried the old way. deep caramel flavor with iron and fiber built in.</p></div>
+    <div class="ingr"><h3>🌰 walnuts &amp; almonds</h3><p>omega-3s, protein, and crunch — fuel for growing brains and tired ones.</p></div>
+    <div class="ingr"><h3>🥜 peanut butter</h3><p>protein + good fats = staying power. also: joy.</p></div>
+    <div class="ingr"><h3>🎃 pumpkin seeds</h3><p>magnesium and zinc — a.k.a. the minerals every exhausted parent needs.</p></div>
+    <div class="ingr"><h3>🥥 coconut oil</h3><p>holds every bite together, gently.</p></div>
+    <div class="ingr"><h3>🍫 chocolate</h3><p>because fiber is great, but moms deserve delight too.</p></div>
+    <div class="ingr"><h3>🧂 sea salt</h3><p>a pinch that makes everything taste like more.</p></div>
+  </div>
+</section>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section>
+  <h2>three flavors</h2>
+  <div class="flavors">
+    <article class="flavor">
+      <h3>classic</h3>
+      <p class="coat">black apricot &amp; almond · no added sugar</p>
+      <p class="ing">roasted barley flour (talkan), black apricots, Medjool dates, coconut oil, almonds, sea salt.</p>
+    </article>
+    <article class="flavor">
+      <h3>choco walnut</h3>
+      <p class="coat">chocolate dipped · two pumpkin seeds on top</p>
+      <p class="ing">roasted barley flour (talkan), Medjool dates, walnuts, chocolate, pumpkin seeds, sea salt.</p>
+    </article>
+    <article class="flavor">
+      <h3>choco peanut butter</h3>
+      <p class="coat">peanut butter filling · chocolate covered</p>
+      <p class="ing">roasted barley flour (talkan), pumpkin seeds, peanut butter, chocolate.</p>
+    </article>
+  </div>
+</section>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section class="allergy">
+  <h2>good to know</h2>
+  <ul>
+    <li><strong>contains:</strong> barley (gluten), peanuts, tree nuts (almonds, walnuts).</li>
+    <li><strong>may contain:</strong> milk, soy, sesame.</li>
+    <li>keep refrigerated.</li>
+  </ul>
+</section>
+
+<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.6 9.4 L24 12 L14.6 14.6 L12 24 L9.4 14.6 L0 12 L9.4 9.4 Z" fill="var(--accent)"/></svg>
+
+<section class="feedback" id="feedback">
+  <h2>tell me what you think</h2>
+  <p>no marketing team here — just me, a mixing bowl, and your opinions. be honest, i can take it 🤎</p>
+  <p style="margin:22px 0 10px;"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeE8BJ3c_I-jCd8LArIzYb_7e2WOpSSf8I4Bfzi-9kbcBF0Qw/viewform">leave feedback — 1 minute</a></p>
+  <p style="margin:0;"><a class="btn btn-ghost" href="https://www.instagram.com/tatu_treats/">follow along · @tatu_treats</a></p>
+</section>
+
+<footer>
+  <p>made with love (and very little sleep) in a home kitchen in illinois 🤎</p>
+  <p>This product was produced in a home kitchen not subject to public health inspection that may also process common food allergens.</p>
+</footer>
+</main>
+
+</body>
+</html>
